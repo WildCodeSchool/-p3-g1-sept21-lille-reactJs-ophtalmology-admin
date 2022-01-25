@@ -6,8 +6,10 @@ import ContentsList from './components/Contents/List';
 import ContentsEdit from './components/Contents/Edit';
 import ContentsPost from './components/Contents/Post';
 import VideosList from './components/Videos/List';
-import VideosEdit from './components/Videos/Edit';
 import VideosPost from './components/Videos/Post';
+import ImagesList from './components/Images/List';
+import ImagesEdit from './components/Images/Edit';
+import ImagesPost from './components/Images/Post';
 
 function App() {
   return (
@@ -20,11 +22,12 @@ function App() {
           edit={ContentsEdit}
           create={ContentsPost}
         />
+        <Resource name="videos" list={VideosList} create={VideosPost} />
         <Resource
-          name="videos"
-          list={VideosList}
-          edit={VideosEdit}
-          create={VideosPost}
+          name="images"
+          list={ImagesList}
+          edit={ImagesEdit}
+          create={ImagesPost}
         />
       </Admin>
     </div>
