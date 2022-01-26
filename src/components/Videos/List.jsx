@@ -1,19 +1,11 @@
-import {
-  List,
-  Datagrid,
-  TextField,
-  DateField,
-  DeleteButton,
-  EditButton,
-} from 'react-admin';
+import { List, Datagrid, TextField, DeleteButton } from 'react-admin';
 
 const VideosList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source="url" />
-        <DateField source="title" />
-        <EditButton basePath="/videos" />
+        <TextField source="title" />
         <DeleteButton basePath="/videos" />
       </Datagrid>
     </List>

@@ -4,7 +4,7 @@ export default {
   login: async (params) => {
     try {
       const formData = {
-        email: params.username,
+        username: params.username,
         password: params.password,
       };
       const { data } = await api.post(`/auth/login`, formData);
