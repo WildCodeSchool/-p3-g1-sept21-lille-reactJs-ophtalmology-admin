@@ -10,7 +10,7 @@ const CommentsPost = (props) => {
   return (
     <Create title="Create" {...props}>
       <SimpleForm>
-        <TextInput source="comment" />
+        <TextInput source="message" />
         <TextInput source="authorName" />
         <NumberInput source="idPages" />
         <DateInput source="date" />
