@@ -1,5 +1,6 @@
 import { Admin, Resource } from 'react-admin';
 import dataProvider from './dataProvider';
+import authProvider from './authProvider';
 import CommentsList from './components/Comments/List';
 import CommentsPost from './components/Comments/Post';
 import ContentsList from './components/Contents/List';
@@ -14,7 +15,7 @@ import ImagesPost from './components/Images/Post';
 function App() {
   return (
     <div className="App">
-      <Admin dataProvider={dataProvider}>
+      <Admin dataProvider={dataProvider} authProvider={authProvider}>
         <Resource name="comments" list={CommentsList} create={CommentsPost} />
         <Resource
           name="contents"
