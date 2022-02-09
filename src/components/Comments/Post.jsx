@@ -3,7 +3,6 @@ import {
   SimpleForm,
   TextInput,
   NumberInput,
-  DateInput,
   ReferenceInput,
   SelectInput,
 } from 'react-admin';
@@ -15,7 +14,6 @@ const CommentsPost = (props) => {
         <TextInput source="message" />
         <TextInput source="authorName" />
         <NumberInput source="idPages" />
-        <DateInput source="date" />
         <ReferenceInput
           label="Commentaire"
           source="idParent"
