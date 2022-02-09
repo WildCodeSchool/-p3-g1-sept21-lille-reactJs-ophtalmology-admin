@@ -4,7 +4,8 @@ import {
   TextInput,
   NumberInput,
   DateInput,
-  CheckboxGroupInput,
+  ReferenceInput,
+  SelectInput,
 } from 'react-admin';
 
 const CommentsPost = (props) => {
@@ -15,10 +16,14 @@ const CommentsPost = (props) => {
         <TextInput source="authorName" />
         <NumberInput source="idPages" />
         <DateInput source="date" />
-        <CheckboxGroupInput
+        <ReferenceInput
+          label="Commentaire"
           source="idParent"
-          choices={[{ id: '1', name: 'Admin' }]}
-        />
+          reference="comments"
+        >
+          <SelectInput optionText="message" />
+        </ReferenceInput>
+        {/* <TextInput source="idParent" initialValue="1" /> */}
       </SimpleForm>
     </Create>
   );

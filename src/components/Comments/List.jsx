@@ -10,6 +10,7 @@ const CommentsList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
+        <TextField source="id" />
         <TextField source="message" />
         <TextField source="authorName" />
         <DateField source="date" />
