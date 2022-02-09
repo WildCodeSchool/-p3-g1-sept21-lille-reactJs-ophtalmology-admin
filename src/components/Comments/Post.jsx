@@ -23,7 +23,6 @@ const CommentsPost = (props) => {
         >
           <SelectInput optionText="message" />
         </ReferenceInput>
-        {/* <TextInput source="idParent" initialValue="1" /> */}
       </SimpleForm>
     </Create>
   );
